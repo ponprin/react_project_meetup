@@ -37,7 +37,7 @@ a:-webkit-any-link {
 }
 .first_section {
   padding-top: 30px;
-  background-color: rgb(0, 128, 255);
+  background-color: rgb(120, 235, 168);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 1fr 1fr 1fr;
@@ -95,7 +95,10 @@ a:-webkit-any-link {
 }
 footer {
 }
-
+.namemeetupclass {
+  width: fit-content;
+  margin: auto;
+}
 @media screen and (max-width: 768px) {
   .logobox {
     top: 1.6875rem;

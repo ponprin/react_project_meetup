@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import First_section from "./components/First_section";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div className="App">
@@ -9,7 +10,7 @@ const App = () => {
       <section className="third_section"></section>
       <section className="fourth_section"></section>
       <section className="prefooter"></section>
-      <footer></footer>
+      <Footer />
     </div>
   );
 }; //asdfsd

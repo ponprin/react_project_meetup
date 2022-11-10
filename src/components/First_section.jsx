@@ -26,7 +26,10 @@ const First_section = () => {
         </p>
       </div>
       <div className="slide">
-        <img src="o_fcb69dcc2c.jpg" alt="" />
+        <img
+          src="https://v.fastcdn.co/u/f91f856b/61268591-0-slide-6.jpg"
+          alt=""
+        />
         {/* <a href="https://www.meetup.com/start?origin=groups">
           <img
             class="mySlides"
@@ -115,7 +118,7 @@ const First_section = () => {
         </a> */}
       </div>
       <div className="meetuporganizing">
-        <h1 className="">Meetup makes organizing easy</h1>
+        <h1 className="namemeetupclass">Meetup makes organizing easy</h1>
         <div id="section_orgs">
           <div className="meetup_orgs">
             <img
