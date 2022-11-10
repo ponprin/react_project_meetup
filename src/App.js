@@ -9,8 +9,7 @@ const App = () => {
       <section className="second_section"></section>
       <section className="third_section"></section>
       <section className="fourth_section"></section>
-      <section className="prefooter"></section>
-      <Footer />
+      <Footer />;
     </div>
   );
 }; //asdfsd

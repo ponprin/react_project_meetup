@@ -12,22 +12,25 @@ const First_section = () => {
           />
         </a>
       </div>
+      <img
+        alt=""
+        src="https://secure.meetupstatic.com/next/images/blobs/green-blob.svg"
+        className="bubble_blue"
+      ></img>
       <div className="years">
-        <h1 className="header_text">
-          20 years of real connections—for{" "}
-          <span id="rotate_word">passions</span> that last
-        </h1>
+        <h1>Celebrating 20 years of real connections on Meetup</h1>
         <p className="">
           <span className="">
-            Your new community is waiting for you. For 20 years, millions of
-            people have chosen Meetup to make real connections over the things
-            that matter. Start a group today.
+            Whatever you’re looking to do this year, Meetup can help. For 20
+            years, people have turned to Meetup to meet people, make friends,
+            find support, grow a business, and explore their interests.
+            Thousands of events are happening every day—join the fun.
           </span>
         </p>
       </div>
       <div className="slide">
         <img
-          src="https://v.fastcdn.co/u/f91f856b/61268591-0-slide-6.jpg"
+          src="https://secure.meetupstatic.com/next/images/shared/online_events.svg?w=640"
           alt=""
         />
         {/* <a href="https://www.meetup.com/start?origin=groups">
