@@ -1,17 +1,17 @@
-import "../App.css";
+import s from "./Footer.module.css";
 import React from "react";
 const Footer = () => {
   return (
-    <div className="footer_back">
+    <div className={s.footer_back}>
       <footer>
-        <div className="footer_start">
+        <div className={s.footer_start}>
           <div>Create your own Meetup group.</div>
-          <a className="pressbutton" href="#">
+          <a className={s.pressbutton} href="#">
             Get Started
           </a>
         </div>
-        <div className="footer_2section">
-          <div className="Your_acc">
+        <div className={s.footer_2section}>
+          <div>
             <li>Your Account</li>
             <li>
               <a href="#">Sign up</a>
@@ -28,7 +28,7 @@ const Footer = () => {
             <li></li>
             <li></li>
           </div>
-          <div className="footer_find">
+          <div className={s.footer_find}>
             <li>Discover</li>
             <li>
               <a href="#s">Groups</a>
@@ -49,7 +49,7 @@ const Footer = () => {
               <a href="#s">Local Guides</a>
             </li>
           </div>
-          <div className="footer_about">
+          <div className={s.footer_about}>
             <li>Meetup</li>
             <li>
               <a href="#s">About</a>
@@ -71,9 +71,9 @@ const Footer = () => {
             </li>
           </div>
         </div>
-        <div className="links">
+        <div className={s.links}>
           <div>Follow us</div>
-          <div className="OSstore">
+          <div className={s.OSstore}>
             <a href="#">
               <img
                 alt="get-it-on-google-play"
@@ -94,7 +94,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="footer_end">
+        <div className={s.footer_end}>
           <t>© 2022 Meetup</t>
           <a href="">Terms of Service</a>
           <a href="">Privacy Policy</a>
