@@ -1,5 +1,8 @@
 import s from "./Footer.module.css";
 import React from "react";
+
+// let classesNew={`${c1}${c2}`};
+
 const Footer = () => {
   return (
     <div className={s.footer_back}>

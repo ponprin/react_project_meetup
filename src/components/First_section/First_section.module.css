@@ -1,0 +1,131 @@
+.bubble_blue {
+  position: absolute;
+  width: 40%;
+  left: 55%;
+  z-index: 0;
+  transform: unset;
+}
+.logobox {
+  margin: auto;
+  display: block;
+  top: 2.0625rem;
+  left: 19.1875rem;
+  height: 9.0625rem;
+  width: 25.25rem;
+  z-index: 75;
+}
+
+#logo {
+  height: 100%;
+  width: 100%;
+  box-sizing: content-box;
+}
+.first_section {
+  padding-top: 0px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 1fr 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
+    "s s"
+    "y slide"
+    "meet meet";
+}
+.section_block {
+  padding-top: 20px;
+  grid-area: s;
+  max-height: 200px;
+}
+.years {
+  grid-area: y;
+  padding: 20px;
+  margin-left: 26%;
+}
+.slide {
+  grid-area: slide;
+  border-radius: 10%;
+  /* background-image: url("C:\Users\VICTUS\Pictures\Saved\o_fcb69dcc2c.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  margin-right: 26%;
+}
+.years > h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+}
+.meetuporganizing {
+  padding-top: 50px;
+  grid-area: meet;
+  height: min-content;
+}
+#section_orgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  max-width: 74%;
+  margin: auto;
+}
+.meetup_orgs {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meetup_orgs img {
+  max-height: 120px;
+  max-width: 120px;
+}
+
+.namemeetupclass {
+  width: fit-content;
+  margin: auto;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.joinmeetup {
+  color: white;
+  background-color: rgb(14, 163, 168);
+  display: flex;
+  width: 7rem;
+  justify-content: center;
+  border-radius: 0.9ch;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 8px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .logobox {
+    top: 1.6875rem;
+    left: 4.25rem;
+    height: 6.0566rem;
+    width: 16.875rem;
+    z-index: 75;
+  }
+  .first_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .slide {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 10rem;
+  }
+  .years {
+    margin-left: 0;
+  }
+  .bubble_blue {
+    width: 30%;
+  }
+  #section_orgs {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}

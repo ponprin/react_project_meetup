@@ -1,0 +1,15 @@
+.meetup_orgs {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meetup_orgs img {
+  max-height: 120px;
+  max-width: 120px;
+}
+
+a {
+  color: rgb(14, 163, 168);
+}

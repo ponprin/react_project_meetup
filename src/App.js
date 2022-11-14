@@ -1,16 +1,20 @@
 import "./App.css";
 import React from "react";
-import First_section from "./components/First_section";
-import Footer from "./components/Footer";
+import Main from "./components/First_section/First_section";
+import Footer from "./components/Footer/Footer";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import Signup from "./components/Signup/Signup";
 const App = () => {
   return (
-    <div className="App">
-      <First_section />
-      <section className="second_section"></section>
-      <section className="third_section"></section>
-      <section className="fourth_section"></section>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="*" element={<Main />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }; //asdfsd
 // function App() {
