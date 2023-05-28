@@ -1,9 +1,11 @@
-import "./Signup.module.css";
+import { Link, NavLink } from "react-router-dom";
+import s from "./Signup.module.css";
+import { useState } from "react";
 
 const Signup = () => {
   return (
     <div>
-      <a href="#s">
+      <NavLink to="/main">
         <svg
           viewBox="0 0 111 40"
           xmlns="http://www.w3.org/2000/svg"
@@ -15,8 +17,8 @@ const Signup = () => {
             fill-rule="evenodd"
           ></path>
         </svg>
-      </a>
-      <div className="block">
+      </NavLink>
+      <div className={s.block}>
         <div className="logo">
           <svg
             viewBox="0 0 51 49"
@@ -38,10 +40,11 @@ const Signup = () => {
           </svg>
         </div>
         <div>Sign up</div>
-        <div>
-          <p></p>
-          <a href="">Log in</a>
-        </div>
+        <span className={s.log}>
+          <p>
+            Already?<a href="">Log in</a>
+          </p>
+        </span>
       </div>
     </div>
   );

@@ -1,0 +1,17 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+  border: 3px solid black;
+  border-radius: 1ch;
+  align-items: center;
+  padding: 60px;
+  font-size: 2rem;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
+.log {
+  display: inline-block;
+  width: 50%;
+}

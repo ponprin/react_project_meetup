@@ -1,6 +1,7 @@
 import s from "./First_section.module.css";
 import React from "react";
 import Meetuporgs from "./Meetup_orgs/Meetup_orgs";
+import { NavLink } from "react-router-dom";
 const First_section = () => {
   return (
     <div>
@@ -57,9 +58,20 @@ const First_section = () => {
           </div>
         </div>
       </section>
-      <a href="/signup" className={s.joinmeetup}>
+      <NavLink
+        to="/signup"
+        /*className={s.joinmeetup}*/ className={(navData) =>
+          navData.isActive ? s.active : s.joinmeetup
+        }
+      >
         Join Meetup
-      </a>
+      </NavLink>
+      <NavLink
+        to="/drinks"
+        className={(navData2) => (navData2.isActive ? s.active : s.joinmeetup)}
+      >
+        Drinks
+      </NavLink>
     </div>
   );
 };
